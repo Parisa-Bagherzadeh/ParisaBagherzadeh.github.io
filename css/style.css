@@ -1,0 +1,982 @@
+/***************************************
+========================================
+
+	Author Name   : Themeplaza
+	This is HTML5 template
+	Template Name : Nusrat Personal Portfolio HTML Template
+	Version: 1.0
+	
+****************************************
+=======================================/
+
+/* ----------------------------------------------------------------
+
+ ==> Table Of Content
+
+	01 Basics
+	02 Buttons
+	03 Header
+	04 Banner
+	05 About
+	06 Service
+	07 Works
+	08 Counter
+	09 Blog
+	10 Contact
+	11 Footer
+	12 Top-control
+ 
+
+---------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+    [ 01 Start Basics ]
+-----------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #333333;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: #333333;
+	font-weight: 600;
+}
+html {
+	scroll-behavior: smooth;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+p {
+    font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0;
+}
+a:hover{
+	text-decoration: none;
+	outline: none;
+}
+.text_white{
+	color: #fff;
+}
+.padding_0{
+	padding: 0;
+}
+.gray_bg{
+	background: #f7f7f7;
+}
+/* START PRELOADER DESIGN */
+.preloader {
+	background-color:#fff;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1000000;
+}
+
+.loader-wrap {
+	position:absolute;
+	bottom:40%;
+	left:50%;
+	width:220px;
+	margin-left:-110px;
+}
+
+.loader-wrap:before {
+	font-size:15px;
+	content:'Loading...';
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	position:absolute;
+	left:0;
+	top:-30px;
+	width:100%;
+	text-align:center;
+}
+
+.progress {
+  position: relative;
+  height: 2px;
+  display: block;
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress .determinate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f3bc17;
+  -webkit-transition: width .3s linear;
+  transition: width .3s linear;
+}
+
+.progress .animated-bar {
+  background-color: #f3bc17;
+}
+
+.progress .animated-bar:before {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+          animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+.progress .animated-bar:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+}
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@-webkit-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+/* END PRELOADER DESIGN */
+
+/* Start Section-Padding */
+.section_padding{
+	padding: 80px 0;
+}
+/* End Section-Padding */
+
+/* Start Section-Heading */
+.section_heading{
+    padding-bottom: 80px;
+}
+.section_heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+	text-transform: capitalize;
+    color: #222;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section_heading h2 span{
+	color: #f3bc17;
+}
+.dark_bg .section_heading h2{
+	color: #fff;
+}
+.section_heading p{
+	margin: 20px 0px 20px 0px;
+}
+.dark_bg .section_heading p{
+	color: #fff;
+}
+.section_heading .sm_border {
+    display: block;
+    height: 2px;
+    width: 70px;
+    margin-bottom: 15px;
+    bottom: -5px;
+    position: relative;
+    left: 50%;
+    background-color: #f3bc17;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+/* End Section-Heading */
+
+/* ----------------------------------------------------------------
+    [ End Basics ]
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+    [ 15 Start Top-control ]
+-----------------------------------------------------------------*/
+.topcontrol{
+    border: 1px solid #f3bc17;
+    border-radius: 30px;
+    bottom: 5px;
+    margin-bottom: 80px;
+    color: #f3bc17;
+    cursor: pointer;
+    font-size: 22px;
+    height: 40px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    padding: 6px 9px;
+    position: fixed;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 40px;
+    z-index: 99;
+}
+.topcontrol:hover{
+    background: #fff;
+    color: #f3bc17;
+}
+/* ----------------------------------------------------------------
+    [ End Top-control ]
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+    [ 02 Start Buttons ]
+-----------------------------------------------------------------*/
+/* Start Btn-Style */
+.main_btn {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    padding: 20px 28px;
+    letter-spacing: 0.5px;
+	border-radius: 30px;
+	font-weight: 600;
+    background: #f3bc17;
+    line-height: 10px;
+	border: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
+}
+.main_btn:hover {
+    background: #222;
+	color: #fff;
+}
+.blog-info .blog_btn {
+    padding: 20px 30px;
+}
+/* ----------------------------------------------------------------
+    [ End Buttons ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 03 Start Header ]
+-----------------------------------------------------------------*/
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-brand p{
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+	margin: -8px 10px 10px 0px;
+    letter-spacing: 1px;
+    color: #f3bc17;
+	font-family: 'Poppins', sans-serif;
+}
+.navbar-default.sticky_menu .navbar-brand p{
+    color: #f3bc17;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 35px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+#nav li.current a {
+	color: #f3bc17;
+	background-color: transparent;
+}
+.main_header.sticky_menu {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    background: #fff;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+.main_header.dark_bg_menu.sticky_menu{
+	background-color: #1d293e;
+    color: #fff;
+    padding: 10px 0;
+	border: none;
+    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    animation: fadeInDown 1s both 0.2s;
+}
+.main_header.sticky_menu .navbar-nav > li > a {
+	color: #333;
+	transition: all 0.3s ease;
+}
+.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a{
+	color: #fff !important;
+	transition: all 0.3s ease;
+}
+.main_header.sticky_menu .navbar-nav > li > a:hover{ color: #f3bc17 !important }
+.main_header.sticky_menu .navbar-nav>.active>a, 
+.main_header.sticky_menu .navbar-nav>.active>a:hover,
+.main_header.sticky_menu .navbar-nav>.active>a:focus{
+    color: #f3bc17 !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+    padding: 0;
+	color: #f3bc17;
+    font-size: 20px;
+	margin-top: 10px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.main_header.sticky_menu .navbar-toggle .icon-bar {
+    background-color: #f3bc17;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+/* ----------------------------------------------------------------
+     [ End Header ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+     [ 04 Start Banner ]
+-----------------------------------------------------------------*/
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	top: 0;
+}
+.main_banner{
+	height: 650px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner_bg{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.banner_bg:before{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+.banner_content{
+	margin-top: 270px;
+	text-align: center;
+}
+.banner_content h3{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+}
+.banner_content h1 {
+    color: #fff;
+    font-size: 60px;
+	text-transform: capitalize;
+    margin: 15px 0 10px;
+}
+.banner_content h1 span .fw_600{
+	font-weight: 600;
+}
+.banner_content h1 span .fw_300{
+	font-weight: 600;
+}
+.banner_content .banner_btn{
+	margin-right: 15px;
+}
+.banner_btn{
+	background: #f3bc17;
+	border: 1px solid #f3bc17;
+	text-decoration: none;
+	padding: 8px 30px;
+	display: inline-block;
+	margin-top: 30px;
+	color: #fff;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
+	border-radius: 50px;
+}
+.banner_btn:hover{
+	background: transparent;
+	border: 1px solid #f3bc17;
+	color: #fff;
+}
+#round {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+	z-index: 9;
+}
+/* ----------------------------------------------------------------
+    [ End Banner ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 05 Start About ]
+-----------------------------------------------------------------*/
+.about_image{
+	position: relative;
+	z-index: 9;
+	width: 90%;
+}
+.about_image img{
+	border: 8px solid #f3bc17;
+	padding: 10px 10px 10px 10px;
+}
+.about_content_area{
+	margin-top: 3px;
+}
+.single_about h4{
+    font-size: 30px;
+	text-transform: capitalize;
+    margin: 0 0 20px;
+	font-weight: 700;
+	color: #222;
+}
+.single_about h4 span{
+	color: #f3bc17;
+}
+.dark_bg .single_about h4{
+	color: #fff;
+}
+.dark_bg .about_content_area p{
+	color: #fff;
+}
+.about_details {
+    margin-top: 20px;
+}
+.about_details li {
+	color: #333;
+	display: inline-block;
+	margin-top: 15px;
+	width: 49%;
+}
+.about_details span {
+    color: #222;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 25%;
+}
+.dark_bg .about_details span{
+	color: #fff;
+}
+.ct_about{
+	margin: 10px 0;
+}
+.dark_bg .ct_about{
+	color: #fff;
+}
+.ct_about span i{
+	margin-right: 5px;
+}
+.single_about a i{
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+}
+
+/* ----------------------------------------------------------------
+    [ End About ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 06 Start Service ]
+-----------------------------------------------------------------*/
+.single-service{
+	background: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 36px 20px;
+	margin-bottom: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.single-service:hover{
+	box-shadow: none;
+}
+.single-service i {
+	background: #f8f8f8;
+	border: 1px solid #eee;
+	color: #f3bc17;
+	width: 50px;
+    height: 50px;
+	line-height: 50px;
+	border-radius: 30px;
+	text-align: center;
+	transition: all 0.4s ease;
+    font-size: 24px;
+    display: inline-block;
+}
+.single-service:hover i{
+	background: #FFBB00;
+	color: #fff;
+	border: 1px solid #FFBB00;
+}
+.single-service h4{
+	color: #6f6767;
+    font-size: 18px;
+    margin-top: 25px;
+    text-transform: capitalize;
+	transition: all 0.4s ease;
+}
+.single-service:hover h4{
+	color: #f3bc17;
+}
+.single-service p{
+	transition: all 0.4s ease;
+	color: #333333;
+	margin-top: 15px;
+}
+.dark_bg .single-service p{
+	color: #fff;
+}
+/* ----------------------------------------------------------------
+    [ End Service ]
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+    [ 10 Start Resume ]
+-----------------------------------------------------------------*/
+.resume-container h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.dark_bg_1 .resume-container h3{
+	color: #fff;
+}
+.resume-container h3 i{
+    margin-right: 15px;
+    font-size: 30px;
+	color: #f3bc17;
+}
+.dark_bg_1 .resume-container h3 i{
+	color: #fff;
+}
+.single_resume strong{
+    color: #000;
+    font-size: 14px;
+}
+.dark_bg_1 .single_resume strong{
+    color: #fff;
+}
+.single_resume h5 {
+    font-size: 16px;
+    font-weight: 700;
+	color: #f3bc17;
+}
+.dark_bg_1 .single_resume h5 {
+    color: #fff;
+}
+.single_resume{
+    box-shadow: 0px -1px 30px rgba(0,0,0, 0.1);
+    display: block;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+	position: relative;
+}
+.dark_bg_1 .single_resume{
+    box-shadow: 0px -1px 30px rgba(255,255,255, 0.2);
+    display: block;
+	position: relative;
+}
+.single_resume:after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 2px;
+    background: #f3bc17;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.dark_bg_1 .single_resume:after {
+    content: "";
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.single_resume:hover:after {
+    width: 100%;
+}
+/* ----------------------------------------------------------------
+    [ End Resume ]
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+    [ 08 Start Works ]
+-----------------------------------------------------------------*/
+.work_filter ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 30px;
+}
+.work_filter ul li {
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+	line-height: 15px;
+	padding: 10px 20px;
+	background: rgba(174, 157, 120, 0.10);
+	border-radius: 20px;
+	color: #333333;
+    letter-spacing: 0.5px;
+    margin: 0 13px 20px;
+    transition: all 0.5s ease-in-out;
+}
+.work_filter ul li:hover{
+	background: #FFBB00;
+    color: #fff;
+}
+.work_filter .active {
+    color: #fff;
+	border-color: #FFBB00;
+    background: #FFBB00;
+}
+.work_content_area .item-img {
+	position: relative;
+	margin-bottom: 30px;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.work_content_area .item-img:hover {
+	-webkit-box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.work_content_area .item-img:hover .item-img-overlay {
+	visibility: visible;
+	opacity: 1;
+}
+.overlay-info{
+	margin-top: 90px;
+}
+.work_content_area .item-img-overlay {
+	text-align: center;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	background: rgba(51, 48, 75, 0.86);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.work_content_area .item-img-overlay .icon {
+	position: absolute;
+	right: 30px;
+	bottom: 70px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 130px;
+	margin-bottom: 43px;
+	text-align: center;
+	font-size: 20px;
+	color: #FFBB00;
+}
+/* ----------------------------------------------------------------
+    [ End Works ]
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+    [ 09 Start Counter ]
+-----------------------------------------------------------------*/
+#counter_area{
+    background: url(../images/counter.jpg);
+	position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#counter_area:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: rgba(51, 48, 75, 0.86);
+}
+.single_counter h3{
+	font-size: 30px;
+	color: #f3bc17;
+}
+.single_counter span{
+	font-size: 30px;
+	font-weight: 600;
+}
+.single_counter h5 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+/* ----------------------------------------------------------------
+    [ End Counter ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 12 Start Blog ]
+-----------------------------------------------------------------*/
+.single_blog{
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	display: block;
+	overflow: hidden;
+}
+.single_blog:hover img{
+	-webkit-transform: rotate(3deg) scale(1.1, 1.1);
+	-ms-transform: rotate(3deg) scale(1.1, 1.1);
+	transform: rotate(3deg) scale(1.1, 1.1);
+}
+.single_blog .blog-image{
+	overflow: hidden;
+}
+.single_blog img{
+	width: 100%;
+    border-radius: 3px 3px 0 0;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.5s;
+}
+.blog-thumb{
+	background: transparent;
+	border-radius: 3px;
+	text-align: left;
+}
+.blog-thumb small{
+	color: #f3bc17;
+	font-weight: 500;
+	display: block;
+}
+.blog-thumb small .fa{
+	margin-right: 5px;
+}
+.blog-thumb small,
+.blog-thumb small + span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.blog-thumb small + span{
+	color: #777;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 2px;
+}
+.blog-thumb h4{
+	color: #222;
+    padding: 0px;
+	text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.blog-thumb h4:hover{
+	color: #f3bc17;
+}
+.blog-info{
+	background: #fff;
+	padding: 20px 30px;
+}
+.blog-info .blog_btn{
+	color: #222;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: capitalize;
+	background: transparent;
+	border: none;
+	font-weight: 500;
+    transition: all 0.4s ease-in-out 0s;
+	padding: 10px 0px;
+}
+.dark_bg .blog-info .blog_btn{
+	color: #fff;
+}
+.blog-info .blog_btn:hover{
+	color: #f3bc17;
+}
+/* ----------------------------------------------------------------
+    [ End Blog ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 13 Start Contact ]
+-----------------------------------------------------------------*/
+.form .form-group input{
+	background: transparent;
+	border-color: #e3e3e3;
+    height: 40px;
+    border-radius: 0;
+	box-shadow: none;
+}
+.form .form-group input:focus{
+	border-color: #f3bc17;
+}
+.form .form-group textarea{
+	background: transparent;
+	border-color: #e3e3e3;
+	margin-top: 10px;
+	padding-bottom: 5%;
+    border-radius: 0;
+	box-shadow: none;
+}
+.form .form-group textarea:focus{
+	border-color: #f3bc17;
+}
+/* ----------------------------------------------------------------
+    [ End Contact ]
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+    [ 14 Start Footer ]
+-----------------------------------------------------------------*/
+.footer{
+    padding: 30px 0 20px;
+    background: #222;
+}
+.copy-text p{
+	color: #fff;
+}
+/* ----------------------------------------------------------------
+    [ End Footer ]
+-----------------------------------------------------------------*/
