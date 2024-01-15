@@ -28,9 +28,8 @@
 		/* END MENU JS */
 		
 		/* START RIPPLES JS */
-			jQuery(document).ready(function(){
-					var $home = $('#home');
-					$home.ripples({
+			$(document).ready(function(){
+					jQuery('#home').ripples({
 						resolution: 512,
 						dropRadius: 20,
 						perturbance: 0.04,
@@ -39,7 +38,7 @@
 		/* END RIPPLES JS */
 		
 		/* START ISOTOP JS */
-			var $grid = $('.work_content_area').isotope({
+			var $grid = $('.work_content_area .row').isotope({
 			  // options
 			});
 			// filter items on button click

@@ -37,18 +37,17 @@
 		crossorigin="anonymous">
 
 	<!--Owl carousel css-->
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="stylesheet" href="./css/owl.carousel.css" type="text/css">
+	<link rel="stylesheet" href="./css/owl.theme.default.css" type="text/css">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
-	<link href="fonts/font-awesome.min.css" rel="stylesheet" />
 	<link rel="icon" href="images/favicon.jpg" />
-	<link href="fonts/themify-icons.css" rel="stylesheet" />
-	<link href="fonts/etline.css" rel="stylesheet" />
-	<link href="css/plugins.css" rel="stylesheet" />
-	<link href="css/lightbox.min.css" rel="stylesheet" />
-	<link href="css/responsive.css" rel="stylesheet" />
-	<link href="css/style.css" rel="stylesheet" />
+	<link href="./fonts/themify-icons.css" rel="stylesheet" />
+	<link href="./fonts/etline.css" rel="stylesheet" />
+	<link href="./css/plugins.css" rel="stylesheet" />
+	<link href="./css/lightbox.min.css" rel="stylesheet" />
+	<link href="./css/responsive.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 </head>
@@ -66,40 +65,27 @@
 
 	<!-- START NAVBAR -->
 	<header class="header_area">
-		<div class="main_header navbar navbar-default menu-top">
+		<nav class="main_header navbar navbar-expand-lg menu-top">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-2 col-sm-2 col-xs-4">
-						<div class="logo">
-							<a href="index.html" class="navbar-brand">
-								<p>Parisa</p>
-							</a>
-							<div class="mobile-nav"></div>
-						</div>
-					</div>
-
-					<div class="col-md-10 col-sm-10 col-xs-8">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-								data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-								<span class="fa fa-navicon"></span>
-							</button>
-						</div>
-
-						<nav id="navbar" class="navbar-collapse collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#resume">Resume</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#blog">Blog</a></li>
-							</ul>
-						</nav>
-					</div>
+				<a href="index.html" class="navbar-brand">
+					<p>Parisa</p>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+						<li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+						<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+					</ul>
 				</div>
 			</div><!--- END CONTAINER -->
-		</div>
+		</nav>
 	</header>
 	<!-- END NAVBAR -->
 
@@ -108,7 +94,7 @@
 		<div id="particles-js"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="col-md-12 col-sm-12 col-12">
 					<div class="banner_content">
 						<h3>Welcome To My Website</h3>
 						<h1 class="cd-headline clip">
@@ -123,7 +109,6 @@
 						<a href="#contact" class="banner_btn js-scroll">Hire Me</a>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -132,7 +117,7 @@
 	<!-- START ABOUT -->
 	<section id="about" class="section_padding">
 		<div class="container">
-			<div class="col-md-12 col-sm-12-col-xs-12">
+			<div class="col-md-12 col-sm-12-col-12">
 				<div class="section_heading text-center">
 					<h2>About <span>Me</span></h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry. Lorem Ipsum
@@ -143,12 +128,12 @@
 
 			<div class="single_about">
 				<div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="col-md-6 col-sm-6 col-12">
 						<div class="about_image wow animated fadeInLeft">
 							<img src="images/about.jpg" alt="about-image" />
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="col-md-6 col-sm-6 col-12">
 						<div class="about_content_area wow animated fadeInRight">
 							<h4>Hello, I am <span>Parisa Bagherzade</span></h4>
 							<p>
@@ -204,7 +189,7 @@
 	<!-- START SERVICE -->
 	<section id="service" class="gray_bg section_padding">
 		<div class="container">
-			<div class="col-md-12 col-sm-12-col-xs-12">
+			<div class="col-md-12 col-sm-12-col-12">
 				<div class="section_heading text-center">
 					<h2>My <span>Services</span></h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry. Lorem Ipsum
@@ -214,7 +199,7 @@
 			</div>
 
 			<div class="row text-center">
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-12">
 					<div class="single-service wow fadeInDown" data-wow-delay="0.3s">
 						<i class="fa fa-sliders"></i>
 						<h4>UI/UX Branding</h4>
@@ -222,7 +207,7 @@
 							consectetur adipisicing elit.</P>
 					</div>
 				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-12">
 					<div class="single-service wow fadeInDown" data-wow-delay="0.3s">
 						<i class="fa fa-desktop"></i>
 						<h4>Web Branding</h4>
@@ -230,7 +215,7 @@
 							consectetur adipisicing elit.</P>
 					</div>
 				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-12">
 					<div class="single-service wow fadeInDown" data-wow-delay="0.3s">
 						<i class="fa fa-wordpress"></i>
 						<h4>Web Development</h4>
@@ -238,7 +223,7 @@
 							consectetur adipisicing elit.</P>
 					</div>
 				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-12">
 					<div class="single-service wow fadeInUp" data-wow-delay="0.3s">
 						<i class="fa fa-paint-brush"></i>
 						<h4>App Branding</h4>
@@ -246,7 +231,7 @@
 							consectetur adipisicing elit.</P>
 					</div>
 				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-12">
 					<div class="single-service wow fadeInUp" data-wow-delay="0.3s">
 						<i class="fa fa-lightbulb-o"></i>
 						<h4>Creative Branding</h4>
@@ -254,7 +239,7 @@
 							consectetur adipisicing elit.</P>
 					</div>
 				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-12">
 					<div class="single-service wow fadeInUp" data-wow-delay="0.3s">
 						<i class="fa fa-cogs"></i>
 						<h4>Customization</h4>
@@ -270,7 +255,7 @@
 	<!-- START RESUME -->
 	<section id="resume" class="section_padding">
 		<div class="container">
-			<div class="col-md-12 col-sm-12-col-xs-12">
+			<div class="col-md-12 col-sm-12-col-12">
 				<div class="section_heading text-center">
 					<h2>My <span>Resume</span></h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry. Lorem Ipsum
@@ -279,7 +264,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-12">
 					<div class="resume-container wow fadeInLeft">
 						<div class="row">
 							<h3><i class="fa fa-graduation-cap"></i>Education:</h3>
@@ -317,7 +302,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-12">
 					<div class="resume-container wow fadeInRight">
 						<div class="row">
 							<h3><i class="fa fa-wordpress"></i>Experience:</h3>
@@ -362,7 +347,7 @@
 	<!-- START PORTFOLIO -->
 	<section id="portfolio" class="gray_bg section_padding">
 		<div class="container">
-			<div class="col-md-12 col-sm-12-col-xs-12">
+			<div class="col-md-12 col-sm-12-col-12">
 				<div class="section_heading text-center">
 					<h2>My <span>Portfolio</span></h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry. Lorem Ipsum
@@ -382,74 +367,76 @@
 				</div>
 
 				<div class="work_content_area">
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="item-img">
-							<img src="images/portfolio/1.jpg" alt="" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<a href="images/portfolio/1.jpg" data-lightbox="images">
-										<span class="icon"><i class="fa fa-plus"></i></span>
-									</a>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-12">
+							<div class="item-img">
+								<img src="images/portfolio/1.jpg" alt="" />
+								<div class="item-img-overlay">
+									<div class="overlay-info full-width">
+										<a href="images/portfolio/1.jpg" data-lightbox="images">
+											<span class="icon"><i class="fa fa-plus"></i></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item Branding Development">
-						<div class="item-img">
-							<img src="images/portfolio/2.jpg" alt="" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<a href="images/portfolio/2.jpg" data-lightbox="images">
-										<span class="icon"><i class="fa fa-plus"></i></span>
-									</a>
+						<div class="col-md-4 col-sm-6 col-12 element-item Branding Development">
+							<div class="item-img">
+								<img src="images/portfolio/2.jpg" alt="" />
+								<div class="item-img-overlay">
+									<div class="overlay-info full-width">
+										<a href="images/portfolio/2.jpg" data-lightbox="images">
+											<span class="icon"><i class="fa fa-plus"></i></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item Development Application">
-						<div class="item-img">
-							<img src="images/portfolio/3.jpg" alt="" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<a href="images/portfolio/3.jpg" data-lightbox="images">
-										<span class="icon"><i class="fa fa-plus"></i></span>
-									</a>
+						<div class="col-md-4 col-sm-6 col-12 element-item Development Application">
+							<div class="item-img">
+								<img src="images/portfolio/3.jpg" alt="" />
+								<div class="item-img-overlay">
+									<div class="overlay-info full-width">
+										<a href="images/portfolio/3.jpg" data-lightbox="images">
+											<span class="icon"><i class="fa fa-plus"></i></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item Branding Development">
-						<div class="item-img">
-							<img src="images/portfolio/4.jpg" alt="" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<a href="images/portfolio/4.jpg" data-lightbox="images">
-										<span class="icon"><i class="fa fa-plus"></i></span>
-									</a>
+						<div class="col-md-4 col-sm-6 col-12 element-item Branding Development">
+							<div class="item-img">
+								<img src="images/portfolio/4.jpg" alt="" />
+								<div class="item-img-overlay">
+									<div class="overlay-info full-width">
+										<a href="images/portfolio/4.jpg" data-lightbox="images">
+											<span class="icon"><i class="fa fa-plus"></i></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item Application Development">
-						<div class="item-img">
-							<img src="images/portfolio/5.jpg" alt="" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<a href="images/portfolio/5.jpg" data-lightbox="images">
-										<span class="icon"><i class="fa fa-plus"></i></span>
-									</a>
+						<div class="col-md-4 col-sm-6 col-12 element-item Application Development">
+							<div class="item-img">
+								<img src="images/portfolio/5.jpg" alt="" />
+								<div class="item-img-overlay">
+									<div class="overlay-info full-width">
+										<a href="images/portfolio/5.jpg" data-lightbox="images">
+											<span class="icon"><i class="fa fa-plus"></i></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item Branding Application">
-						<div class="item-img">
-							<img src="images/portfolio/6.jpg" alt="" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<a href="images/portfolio/6.jpg" data-lightbox="images">
-										<span class="icon"><i class="fa fa-plus"></i></span>
-									</a>
+						<div class="col-md-4 col-sm-6 col-12 element-item Branding Application">
+							<div class="item-img">
+								<img src="images/portfolio/6.jpg" alt="" />
+								<div class="item-img-overlay">
+									<div class="overlay-info full-width">
+										<a href="images/portfolio/6.jpg" data-lightbox="images">
+											<span class="icon"><i class="fa fa-plus"></i></span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -465,28 +452,28 @@
 		<div class="container">
 			<div class="row text-center">
 
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="single_counter">
 						<h3><span class="counter">90</span>+</h3>
 						<h5>Successul Projects</h5>
 					</div>
 				</div>
 
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="single_counter">
 						<h3><span class="counter">620</span>K</h3>
 						<h5>Happy Clients</h5>
 					</div>
 				</div>
 
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="single_counter">
 						<h3><span class="counter">60</span>+</h3>
 						<h5>Awards Received</h5>
 					</div>
 				</div>
 
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="single_counter border_left">
 						<h3><span class="counter">520</span>K</h3>
 						<h5>Customer</h5>
@@ -496,85 +483,6 @@
 		</div>
 	</section>
 	<!-- END COUNTER -->
-
-	<!-- START BLOG -->
-	<section id="blog" class="gray_bg section_padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12-col-xs-12">
-					<div class="section_heading text-center">
-						<h2>Latest <span>Blog</span></h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting<br /> industry. Lorem Ipsum
-							standard dummy text.</p>
-						<div class="sm_border"></div>
-					</div>
-				</div>
-
-				<div class="blog_slide_area">
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="single_blog wow fadeInLeft">
-							<div class="blog-thumb">
-								<div class="blog-image">
-									<a href="#"><img src="images/blog/1.jpg" class="img-responsive" alt=""></a>
-								</div>
-								<div class="blog-info">
-									<small><i class="fa fa-clock-o"></i>December 31, 2022</small>
-									<span>| Design</span>
-									<a href="#">
-										<h4>Our Marketing Website</h4>
-									</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt
-										quidem illum repellat</p>
-									<a href="#" class="btn blog_btn">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="single_blog wow fadeInUp">
-							<div class="blog-thumb">
-								<div class="blog-image">
-									<a href="#"><img src="images/blog/2.jpg" class="img-responsive" alt=""></a>
-								</div>
-								<div class="blog-info">
-									<small><i class="fa fa-clock-o"></i>December 31, 2022</small>
-									<span>| Work</span>
-									<a href="#">
-										<h4>Our Marketing Website</h4>
-									</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt
-										quidem illum repellat</p>
-									<a href="#" class="btn blog_btn">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="single_blog wow fadeInRight">
-							<div class="blog-thumb">
-								<div class="blog-image">
-									<a href="#"><img src="images/blog/3.jpg" class="img-responsive" alt=""></a>
-								</div>
-								<div class="blog-info">
-									<small><i class="fa fa-clock-o"></i>December 31, 2022</small>
-									<span>| Creative</span>
-									<a href="#">
-										<h4>Our Marketing Website</h4>
-									</a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt
-										quidem illum repellat</p>
-									<a href="#" class="btn blog_btn">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END BLOG -->
 
 	<!-- START FOOTER -->
 	<div class="footer">
@@ -591,6 +499,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/de7639e506.js" crossorigin="anonymous"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/modernizr-2.8.3.min.js"></script>
 	<script src="js/jquery.nav.js"></script>
