@@ -4,13 +4,6 @@
 	jQuery(document).ready(function () {
 
 		/* START MENU JS */
-		$('a').on('click', function (e) {
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 50
-			}, 1500);
-			e.preventDefault();
-		});
 
 		$(window).on('scroll', function () {
 			if ($(this).scrollTop() > 50) {
