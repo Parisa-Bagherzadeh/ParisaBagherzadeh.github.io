@@ -201,7 +201,7 @@
                     speed: 200,
                     loop: true,
                     strings: [
-                        'Designer',
+                        'Machine Learning Engineer',
                         'Developer'
                     ],
                     breakLines: false
